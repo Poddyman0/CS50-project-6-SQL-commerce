@@ -42,3 +42,38 @@ The Commerce project is a web-based auction platform where users can post auctio
 
 - **Django Admin**: Admins can view, add, edit, and delete listings, comments, and bids.
 
+Setup Instructions and Running the Code in a Browser
+Download the Project
+Clone or download the project files from the repository.
+
+Navigate to Project Directory
+Open a terminal and navigate (cd) into the project directory: cd CS50-project-6-SQL-commerce
+
+Set Up the Environment
+Make sure you have Django and PostgreSQL installed. Install the required dependencies:
+
+bash
+Copy code
+pip install -r requirements.txt
+Configure Database
+Update the settings.py file with your PostgreSQL credentials. Then, apply migrations:
+
+bash
+Copy code
+python manage.py migrate
+Create a Superuser (Optional for Admin Access)
+Run:
+
+bash
+Copy code
+python manage.py createsuperuser
+Start the Web Server
+Run:
+
+bash
+Copy code
+python manage.py runserver
+Open the application in your browser at http://127.0.0.1:8000/.
+
+Explore the Auction Platform
+Register or log in to access features like creating listings, placing bids, managing watchlists, and more.
